@@ -56,14 +56,25 @@ ul {
 .header-div {
   height: 50px;
   width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
   /* debug */
   background-color: azure;
 }
 
+.header-div .btn {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 7px 20px 7px 20px;
+  border-radius: 20px;
+}
+
 /* Body div */
 .body-div {
-  overflow: auto;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 /* Genre-list */
@@ -73,4 +84,17 @@ ul {
   justify-content: space-between;
   /* debug */
   color: white;
+}
+
+/* Music section */
+.music-section {
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.music-section .card {
+  width: calc((100% - 20px) / 2);
 }
