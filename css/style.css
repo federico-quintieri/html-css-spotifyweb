@@ -10,91 +10,45 @@ ul {
   list-style: none;
 }
 
-/* Utiliy classes */
+/* Utility classes */
 
 /* Container che occupa tutta la pagina */
 .wrapper {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   /* debug */
   background-color: aquamarine;
 }
 
-/* Row principale */
-
-.row-main {
+/* Main row */
+.main-row {
   display: flex;
-  height: 90%;
   width: 100%;
+  height: 100%;
 }
 
-/* Colonne principali */
-
-.col-left {
+/* Div left menu */
+.div-left-menu {
+  height: 100%;
   width: 50px;
-  height: 100%;
-  /* debug */
-  background-color: black;
-}
-
-.col-right {
-  height: 100%;
-  width: calc(100% - 50px);
-  /* debug */
   background-color: blue;
 }
 
-/* Row media */
-.row-media {
-  height: 10%;
+/* Div Body */
+.div-body {
   width: 100%;
-  /* debug */
-  background-color: blueviolet;
+  height: 100%;
+  background-color: aliceblue;
+
+  overflow: auto;
 }
 
-/* header div */
-.header-div {
-  height: 50px;
+/* Media div */
+.div-media {
+  height: 70px;
   width: 100%;
-  text-align: right;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding-right: 10px;
-  /* debug */
-  background-color: azure;
-}
-
-.header-div .btn {
-  display: inline-block;
-  border: 1px solid black;
-  padding: 7px 20px 7px 20px;
-  border-radius: 20px;
-}
-
-/* Body div */
-.body-div {
-  padding: 15px 15px 0 15px;
-}
-
-/* Genre-list */
-.genre-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* debug */
-  color: white;
-}
-
-/* Music section */
-.music-section {
-  height: 75vh;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: auto;
-  gap: 10px;
-}
-
-.music-section .card {
-  width: calc((100% - 20px) / 2);
+  background-color: black;
 }
