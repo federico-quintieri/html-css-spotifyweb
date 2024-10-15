@@ -28,6 +28,9 @@ ul {
   display: flex;
   width: 100%;
   height: 100%;
+
+  /* Non fa uscire il contenuto */
+  overflow-y: hidden;
 }
 
 /* Div left menu */
@@ -43,7 +46,8 @@ ul {
   height: 100%;
   background-color: aliceblue;
 
-  overflow: auto;
+  /* Permetto a .div body di scrollare verticalmente */
+  overflow-y: auto;
 }
 
 /* Header Div */
@@ -58,11 +62,17 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  /* Uno dei padding principali del body */
+  padding-top: 20px;
 }
 
 /* Grid dentro div body */
 .div-body .row {
+  /* Resto dei padding importanti del body */
+  padding: 0 20px 20px 20px;
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
