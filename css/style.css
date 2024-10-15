@@ -63,6 +63,21 @@ ul {
   width: 100%;
   height: 70px;
   background-color: burlywood;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  /* Padding per il button span */
+  padding-right: 20px;
+}
+
+.div-header .btn {
+  display: inline-block;
+  border: 1px solid black;
+
+  /* Padding per arrotondare button */
+  padding: 7px 20px 7px 20px;
+  border-radius: 20px;
 }
 
 /* Genre list */
