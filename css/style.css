@@ -38,6 +38,14 @@ ul {
   height: 100%;
   width: 50px;
   background-color: blue;
+  color: white;
+}
+
+.div-left-menu .row {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Div Body */
