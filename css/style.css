@@ -46,6 +46,12 @@ ul {
   width: 50px;
   background-color: var(--left-div-bg);
   color: white;
+  padding: 7px;
+}
+
+/* Padding lista */
+.left-menu-up li {
+  padding-top: 10px;
 }
 
 .div-left-menu .row {
@@ -218,8 +224,7 @@ ul {
   text-align: center;
 }
 
-/* Responsive CSS */
-
+/****** Responsive CSS ******/
 /* Telefono largo */
 @media screen and (min-width: 425px) {
   /* Div left menu */
