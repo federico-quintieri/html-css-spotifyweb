@@ -135,20 +135,27 @@ ul {
   display: block;
 }
 
-.card {
+.overlay-div {
   position: relative;
 }
 
 .card .overlay-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30%;
+  left: 40%;
   z-index: -1;
+  color: yellow;
+  font-size: 5rem;
 }
 
 /* Immagini tonde ... */
+
 .row.third img {
-  border-radius: 100px;
+  width: 100%;
+  /* Fa si che l'immagine rimanga quadrata */
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .div-body .row {
@@ -296,5 +303,9 @@ ul {
 
   .overlay-div:hover .overlay-img {
     z-index: +1;
+  }
+  .overlay-div:hover .normal-img {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
   }
 }
