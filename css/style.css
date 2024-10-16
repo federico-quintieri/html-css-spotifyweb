@@ -275,6 +275,10 @@ ul {
     align-items: center;
   }
 
+  .left-menu-up.first li:hover img{
+    border-left: 2px solid rgb(5, 255, 5);
+  }
+
   /* Cambio il display dello span per farlo vedere */
   .left-menu-up span.text {
     display: inline-block;
@@ -297,6 +301,11 @@ ul {
   .left-menu-up.second i + span {
     font-size: 1.1rem;
     font-weight: bold;
+  }
+
+  .left-menu-up.second li:hover {
+    color: aliceblue;
+    cursor: pointer;
   }
 }
 
