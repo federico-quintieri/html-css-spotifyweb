@@ -47,6 +47,8 @@ ul {
   background-color: var(--left-div-bg);
   color: white;
   padding: 7px;
+
+  overflow: auto;
 }
 
 /* Padding lista */
@@ -224,6 +226,23 @@ ul {
   text-align: center;
 }
 
+.gray {
+  color: gray;
+}
+
+.white {
+  color: white;
+}
+
+/* Nascondo seconda lista menù sinistra */
+.left-menu-up.second {
+  display: none;
+}
+/* Nascondo le span nel menu a sinistra */
+.left-menu-up.text {
+  display: none;
+}
+
 /****** Responsive CSS ******/
 /* Telefono largo */
 @media screen and (min-width: 425px) {
@@ -238,6 +257,46 @@ ul {
     width: calc(100% - 150px);
     height: 100%;
     overflow: auto;
+  }
+
+  /* Change the image */
+  .left-menu-up.first li:first-child {
+    content: url("../img/logo.svg");
+    width: 120px;
+    padding-bottom: 20px;
+  }
+
+  .left-menu-up.first li:last-child {
+    padding-bottom: 20px;
+  }
+
+  .left-menu-up li {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Cambio il display dello span per farlo vedere */
+  .left-menu-up span.text {
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+  .left-menu-up img {
+    width: 30px;
+  }
+
+  .left-menu-up.second {
+    display: block;
+  }
+
+  .left-menu-up.second i {
+    padding-right: 10px;
+    font-size: 2rem;
+  }
+
+  .left-menu-up.second i + span {
+    font-size: 1.1rem;
+    font-weight: bold;
   }
 }
 
