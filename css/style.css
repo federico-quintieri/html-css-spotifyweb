@@ -243,6 +243,21 @@ ul {
   display: none;
 }
 
+.col-down img {
+  width: 30px;
+  padding-top: 20px;
+}
+
+.col-down i {
+  padding-left: 10px;
+  color: gray;
+}
+
+.col-down hr {
+  display: none;
+  border: 1px solid gray;
+}
+
 /****** Responsive CSS ******/
 /* Telefono largo */
 @media screen and (min-width: 425px) {
@@ -275,7 +290,7 @@ ul {
     align-items: center;
   }
 
-  .left-menu-up.first li:hover img{
+  .left-menu-up.first li:hover img {
     border-left: 2px solid rgb(5, 255, 5);
   }
 
@@ -306,6 +321,30 @@ ul {
   .left-menu-up.second li:hover {
     color: aliceblue;
     cursor: pointer;
+  }
+
+  .col-down i {
+    padding-bottom: 20px;
+    padding-left: 10;
+  }
+
+  .col-down i:after {
+    content: "Installa app";
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+
+  .col-down .image-container:after {
+    content: "Bobby";
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  .col-down hr {
+    display: block;
+    border: 1px solid gray;
   }
 }
 
