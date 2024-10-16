@@ -132,10 +132,23 @@ ul {
 
 .card img {
   padding-bottom: 10px;
+  display: block;
 }
 
+.card {
+  position: relative;
+}
+
+.card .overlay-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Immagini tonde ... */
 .row.third img {
-  border-radius: 70px;
+  border-radius: 100px;
 }
 
 .div-body .row {
@@ -175,6 +188,7 @@ ul {
 
 .card span {
   font-size: 0.8rem;
+  color: gray;
 }
 
 .col-50 {
@@ -261,5 +275,26 @@ ul {
 
   .genre-list li:hover {
     cursor: pointer;
+  }
+
+  h2.title-c {
+    font-size: 2rem;
+  }
+  p.title-p {
+    font-size: 1.5rem;
+  }
+  .card h3 {
+    font-size: 1.4rem;
+  }
+  .card span {
+    font-size: 1.2rem;
+  }
+
+  .overlay-div:hover {
+    cursor: pointer;
+  }
+
+  .overlay-div:hover .overlay-img {
+    z-index: +1;
   }
 }
