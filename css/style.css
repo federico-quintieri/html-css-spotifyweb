@@ -258,6 +258,35 @@ ul {
   border: 1px solid gray;
 }
 
+/* Parte footer */
+
+.div-media {
+  padding: 10px;
+}
+
+.div-media .card {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+}
+
+.div-media .first-ul,
+.div-media .first-ul li {
+  padding-left: 10px;
+}
+
+.div-img {
+  padding-right: 10px;
+}
+
+.div-media .div-lista ul {
+  display: flex;
+}
+
+.div-img img {
+  width: 50px;
+}
 /****** Responsive CSS ******/
 /* Telefono largo */
 @media screen and (min-width: 425px) {
