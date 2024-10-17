@@ -276,6 +276,20 @@ ul {
   padding-left: 10px;
 }
 
+.div-media .col-25.right {
+  display: flex;
+  justify-content: right;
+}
+
+.right-media-ul {
+  display: flex;
+  align-items: center;
+}
+
+.right-media-ul li {
+  padding-left: 10px;
+}
+
 .div-img {
   padding-right: 10px;
 }
@@ -287,6 +301,34 @@ ul {
 .div-img img {
   width: 50px;
 }
+
+.volume-bar {
+  height: 5px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+/* center div media footer */
+.div-media .col-50.center .card {
+  display: flex;
+  flex-direction: column;
+}
+.div-media .col-50.center ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 15px;
+}
+
+i.fa-solid.fa-circle-play {
+  font-size: 1.5rem;
+}
+
+.lista-player .volume-bar {
+
+}
+
 /****** Responsive CSS ******/
 /* Telefono largo */
 @media screen and (min-width: 425px) {
